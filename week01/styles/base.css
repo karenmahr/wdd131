@@ -1,39 +1,85 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+:root {
+    --primary-color: #08415c;
+    --secondary-color: #cc2936;
 }
 
 body {
-    font-family: acme, Arial, sans-serif;
+    font-family: acme, Arial, Amatic_SC;
+    margin: 0;
+}
+
+.navigation {
+    width: 100%;
+    background-color: #F0E7D8;
+    color: rgb(0, 0, 0);
 }
 
 .navigation ul {
     display: flex;
-    background-color: #000;
     list-style: none;
-    justify-content: space-around;
+    justify-content: center;
+    margin: 0;
 }
+
 .navigation li {
     flex: 1;
     text-align: center;
 }
+
 .navigation a {
     display: block;
-    color: #fff;
+    color: #000000;
     padding: 1rem;
     text-decoration: none;
     text-align: center;
 }
-*/hay que simplificarlo*/
-main {
-    gap: 1rem;
-    padding: 1rem;
-    width: 20rem;
-    display: block;
+
+h1 {
+    background-color: #38040e;
+    color: rgb(210, 202, 202);
+    margin: 0;
 }
-.main-content {
-    background-color: #ccc;
-    padding: 1rem;
+
+h2 {
+    display: block;
+    text-align: center;
+    background-color: #38040e;
+    margin: 0;
+    color: rgb(210, 202, 202);
+}
+
+h3 {
+    display: block;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.581);
+    text-decoration: underline;
+}
+
+.card img {
+    max-width: 20%;
+    height: auto;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.card-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    border: 1px solid rgba(2, 2, 2, 2);
+    margin-top: 10px;
+    padding: 0 3rem;
+}
+
+footer {
+    background-color: #38040e;
+    color: rgb(210, 202, 202);
+    margin: 0;
+    display: block;
     text-align: center;
 }
