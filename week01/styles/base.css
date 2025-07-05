@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: acme, Arial, sans-serif;
+}
+
+.navigation ul {
+    display: flex;
+    background-color: #000;
+    list-style: none;
+    justify-content: space-around;
+}
+.navigation li {
+    flex: 1;
+    text-align: center;
+}
+.navigation a {
+    display: block;
+    color: #fff;
+    padding: 1rem;
+    text-decoration: none;
+    text-align: center;
+}
+*/hay que simplificarlo*/
+main {
+    gap: 1rem;
+    padding: 1rem;
+    width: 20rem;
+    display: block;
+}
+.main-content {
+    background-color: #ccc;
+    padding: 1rem;
+    text-align: center;
+}
