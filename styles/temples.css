@@ -1,0 +1,73 @@
+:root {
+    --primary-color: #9984d4;
+    --secondary-color: #caa8f5;
+    --accent-color-one: #230c33;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight:100;
+    background-color: #F5EFFD;
+}
+
+/* header */
+p{
+    text-align: center;
+    color:#230c33;
+}
+
+h1{
+    text-align: center;
+    color: #230c33;
+}
+
+menu::before{
+    content:"☰";
+}
+
+nav{
+    background-color: #9984d4;
+    margin:0 auto;
+    max-width: 800px;
+}
+nav ul{
+    list-style-type: none;
+}
+nav a{
+    display:block;
+    color:azure;
+    text-align: center;
+    padding:1rem;
+    text-decoration: none;
+}
+.navigation a:hover, navigation a:active{
+    border:1px solid white;
+}
+
+/* main */
+
+main{
+    max-width: 800px;
+    margin:0 auto;
+}
+.temples{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+img{
+    width:100%;
+    height:auto;
+    margin:.5rem;
+}
+
+figcaption{
+    font-size: smaller;
+    color:#230c33;
+    text-align: center;
+}
+.hover:hover{
+    box-shadow: 0 0 50px white;
+}
+
+
