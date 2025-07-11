@@ -15,21 +15,19 @@
 </head>
 <body>
     <header>
-        
+        <button type="button" id="menu"></button>
+        <h1>Temple Album</h1>
         <nav class="navigation">
-            <ul>
-                <p>Temple Album</p>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Old</a></li>
                 <li><a href="#">New</a></li>
                 <li><a href="#">Large</a></li>
                 <li><a href="#">Small</a></li>
-            </ul>
         </nav>
     </header>
 
     <main>
-        <h1>Home</h1>
+        <h2>Home</h2>
         <div class="temples">
         <figure>
             <img src="week01/images/buenos_aires_argentina_temple.webp" alt="Buenos Aires Temple">
@@ -70,9 +68,10 @@
     </div>
     </main>
 
-    <footer> 
+    <footer>
         <p>© <span id="currentyear"></span> Karen Mahr Argentina</p>
-        <p>lastModified</p>
+        <p><span id="lastModified"></span></p>
     </footer>
+    <script src="week02/scripts/temples.js" defer></script>
 </body>
 </html>

@@ -10,41 +10,70 @@ body{
     background-color: #F5EFFD;
 }
 
-/* header */
-p{
-    text-align: center;
-    color:#230c33;
+#menu{
+    border:0;
+    background:none;
+    color:white;
+    position:absolute;
+    top:1rem;
+    right:1rem;
+    display:block;
 }
 
-h1{
+#menu::before {
+    content: "☰";
+    color: #230c33;
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
+.open a {
+    display: block;
+}
+
+h1 {
     text-align: center;
     color: #230c33;
 }
 
-menu::before{
-    content:"☰";
+nav {
+    background-color: #9984d4;
+    margin: 0 auto;
+    max-width: 900%;
 }
 
-nav{
+.navigation{
+    display:none;
+    flex-direction:column;
     background-color: #9984d4;
-    margin:0 auto;
-    max-width: 800px;
-}
-nav ul{
     list-style-type: none;
 }
-nav a{
+
+.navigation a{
     display:block;
-    color:azure;
-    text-align: center;
-    padding:1rem;
-    text-decoration: none;
-}
-.navigation a:hover, navigation a:active{
-    border:1px solid white;
+    padding:0.5rem;
+    color:white;
+    text-align:left;
 }
 
-/* main */
+.navigation.open{
+    display:flex;
+}
+
+nav a {
+    display: block;
+    color: azure;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.navigation a:hover,
+.navigation a:active {
+    background-color: #bbb;
+    color: #333;
+}
 
 main{
     max-width: 800px;
@@ -66,8 +95,10 @@ figcaption{
     color:#230c33;
     text-align: center;
 }
-.hover:hover{
-    box-shadow: 0 0 50px white;
+
+footer{
+    background-color: #9984d444;
+    text-align:center;
 }
 
 

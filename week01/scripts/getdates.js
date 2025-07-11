@@ -1,9 +1,6 @@
-<head>
-    ...
-    <script src="scripts/getdates.js" defer>
-        const currentyear = document.querySelector("#year");
-        year.innerHTML = `getFullYear(): <span class="highlight">${today.getFullYear()}</span>`;
-    </script>
+const today = new Date();
+const currentYearSpan = document.querySelector("#currentyear");
+currentYearSpan.textContent = today.getFullYear();
 
-    alert(document.lastModified);
-</head>
+const lastMofified = document.querySelector("#lastModified");
+lastModified.textContent = `Last modified: ${document.lastModified}`;
