@@ -43,19 +43,23 @@ nav {
     margin: 0 auto;
     max-width: 900%;
 }
+nav ul{
+    list-style: none;
+    padding:0;
+    margin:0;
+}
 
 .navigation{
     display:none;
     flex-direction:column;
-    background-color: #9984d4;
-    list-style-type: none;
+    background-color: #230c33;
 }
 
 .navigation a{
     display:block;
     padding:0.5rem;
     color:white;
-    text-align:left;
+    text-align:center;
 }
 
 .navigation.open{
@@ -98,8 +102,9 @@ figcaption{
 }
 
 footer{
-    background-color: #9984d444;
+    background-color: #230c33;
     text-align:center;
+    color:white;
 }
 
 
