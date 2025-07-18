@@ -1,0 +1,43 @@
+@media (min-width:640px) {
+    
+    body{
+        height:77vh;
+    }
+    
+    .weather {
+        top: 600px;
+        right: 100px;
+    }
+
+    .data {
+        top: 250px;
+        left: 100px;
+    }
+
+    .weather,
+    .data {
+        width: 300px;
+        position: absolute;
+        border: 1px solid #d00000;
+        box-shadow: 0 0 30px gray;
+    }
+
+    h1 {
+        height: 80px;
+        font-size: 350%;
+    }
+    h2{
+        border-top: 1px solid #d00000;
+        background-color: #588157;
+        color: white;
+    }
+
+    footer{
+        border-top: 10px solid #588157;
+        border-bottom: 10px solid #588157;
+    }
+    #image{
+        border-bottom: 10px solid #588157;
+        height:77vh;
+    }
+}

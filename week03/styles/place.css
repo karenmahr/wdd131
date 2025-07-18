@@ -1,0 +1,58 @@
+:root {
+    --primary-color: #d00000;
+    --secondary-color: #588157;
+}
+
+* {
+    font-family: "Roboto", sans-serif;
+    margin: 10;
+    padding: 10;
+}
+
+h1 {
+    text-align: center;
+    background-color: #588157;
+    color: white;
+    height: 50px;
+    border-bottom: 10px solid #d00000;
+    margin: 0;
+    padding: 0;
+    font-size: 230%;
+}
+
+#image {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: block;
+    height: 100vh;
+}
+
+h2 {
+    padding: 0;
+    margin: 0;
+    font-size: 130%;;
+}
+
+.weather,
+.data {
+    background-color: rgba(255, 255, 255, 0.911);
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    border-top: none;
+    display: block;
+}
+
+footer {
+    background-color: #588157;
+    text-align: center;
+    color: white;
+    padding: 0;
+    margin: 0;
+    border-top: 5px solid #588157;
+    border-bottom: 5px solid #588157;
+}
