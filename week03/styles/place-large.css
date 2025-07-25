@@ -28,16 +28,20 @@
     }
     h2{
         border-top: 1px solid #d00000;
-        background-color: #588157;
+        background-color: green;
         color: white;
     }
 
     footer{
-        border-top: 10px solid #588157;
-        border-bottom: 10px solid #588157;
+        border-top: 10px solid #d00000;
+        border-bottom: 10px solid #d00000;
     }
     picture{
-        border-bottom: 10px solid #588157;
+        border-bottom: 10px solid green;
         height:77vh;
+    }
+    .icon{
+        width:40px;
+        height:40px;
     }
 }

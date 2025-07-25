@@ -1,6 +1,6 @@
 :root {
     --primary-color: #d00000;
-    --secondary-color: #588157;
+    --secondary-color: green;
 }
 
 * {
@@ -11,10 +11,10 @@
 
 h1 {
     text-align: center;
-    background-color: #588157;
+    background-color: #d00000;
     color: white;
     height: 50px;
-    border-bottom: 10px solid #d00000;
+    border-bottom: 10px solid green;
     margin: 0;
     padding: 0;
     font-size: 230%;
@@ -53,11 +53,11 @@ h2 {
 }
 
 footer {
-    background-color: #588157;
+    background-color: #d00000;
     text-align: center;
     color: white;
     padding: 0;
     margin: 0;
-    border-top: 5px solid #588157;
-    border-bottom: 5px solid #588157;
+    border-top: 5px solid #d00000;
+    border-bottom: 5px solid #d00000;
 }
