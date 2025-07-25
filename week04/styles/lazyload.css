@@ -1,0 +1,9 @@
+main{
+    display:flex;
+    flex-direction: column;
+}
+
+img{
+    background: black;
+    animation: fade 15s;
+}
