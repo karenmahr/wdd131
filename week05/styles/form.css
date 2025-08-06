@@ -76,6 +76,12 @@ h1{
     color:#ffccd5;
 }
 
+#productName {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+}
+
 #writtenReview{
     height:3rem;
 }
