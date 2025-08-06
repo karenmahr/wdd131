@@ -1,0 +1,87 @@
+:root {
+    --primary-color: #800f2f;
+    --secondary-color: #590d22;
+    --accent-color-one: #ffccd5;
+}
+
+h1{
+    background-image: linear-gradient(#800f2f, #590d22);
+    color:#ffccd5;
+    text-align: center;
+    padding: .5rem 0;
+}
+
+.form{
+    background-color:#dac9cee1;
+    border-top: 5px solid #dac9cee1;
+    border-bottom: 5px solid #dac9cee1;;
+}
+
+.form fieldset{
+    margin:1rem 0;
+    border: none;
+    border-radius:6px;
+    font-size: .9rem;
+    padding: .5rem 2%;
+}
+
+.form legend{
+    margin-bottom: 0rem;
+}
+.secondLegend{
+    font-style: italic;
+}
+
+.optional{
+    color:#800f2f;
+
+}
+
+.form label{
+    display:block;
+    color:black;
+    font-size: .9rem;
+    margin-bottom: .5rem;
+    border-radius: 6px;
+    
+}
+
+.form input{
+    margin-top:0;
+}
+
+.form input[type="text"],
+.form input[type="radio"],
+.form input[type="date"],
+.form input[type="textArea"]
+{
+    display:block;
+    width:100%;
+    max-width:400px;
+}
+
+.rating {
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+
+.form input[type="submit"]{
+    width:100%;
+    max-width: 400px;
+    padding:.8rem;
+    border-radius:6px;
+    border:none;
+    background-image: linear-gradient(#800f2f,#590d22);
+    color:#ffccd5;
+}
+
+#writtenReview{
+    height:3rem;
+}
+
+footer {
+    background-color: #800f2f;
+    text-align: center;
+    color: #ffccd5;
+}

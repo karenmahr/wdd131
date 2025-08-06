@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="WDD 131 – Dynamic Web Fundamentals - Karen Mahr. This project is a Product Review Form." />
+    <link rel="stylesheet" href="form.css">
+    <script src="form.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>WDD 131 – Dynamic Web Fundamentals – Karen Mahr</title>
+</head>
+
+<body>
+    <h1>Product Review</h1>
+
+    <form method="get" action="review.html" class="form">
+        <fieldset>
+            <legend>Product Name</legend>
+            <label for="productName"><input type="text" id="productName" name="pname" placeholder="Choose a Product ..." required></label>
+            <select id="productNameDisabled" disabled>
+
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Overall Rating</legend>
+            <div class="rating">
+                <label for="oneStar">☆<input type="radio" id="oneStar" name="star" value="one" required></label>
+                <label for="twoStar">☆☆<input type="radio" id="twoStar" name="star" value="two" required></label>
+                <label for="threeStar">☆☆☆<input type="radio" id="threeStar" name="star" value="three" required></label>
+                <label for="fourStar">☆☆☆☆<input type="radio" id="fourStar" name="star" value="four" required></label>
+                <label for="fiveStar">☆☆☆☆☆<input type="radio" id="fiveStar" name="star" value="five" required></label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <label for="instalationDate">Date of Installation</label><input type="date" id="instalationDate" name="completeDate" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Which features did you find useful in the product?
+            <br>
+            <span class="secondLegend">(Check all that apply)</span>
+            </legend>
+            <label for="durability"><input type="checkbox" id="durability" name="durability" value="yes"> Durability</label>
+            <label for="easeOfUse"><input type="checkbox" id="easeOfUse" name="easeOfUse" value="yes"> Ease of Use</label>
+            <label for="performance"><input type="checkbox" id="performance" name="performance" value="yes"> Performance</label>
+            <label for="design"><input type="checkbox" id="design" name="design" value="yes"> Design</label>
+        </fieldset>
+
+        <fieldset>
+            <label for="writtenReview">Written Review
+            <span class="optional">(Optional)</span></label>
+            <input type="textarea" id="writtenReview" name="review">
+        </fieldset>
+
+        <fieldset>
+            <label for="userName">Your name
+            <span class="optional">(Optional)</span></label>
+            <input type="text" id="userName" name="name"></label>
+        </fieldset>
+
+        <label for="submit"><input type="submit" id="submit" value="Post Review"></label>
+
+    </form>
+
+        <footer>
+            <p>© <span id="currentyear"></span> Karen Mahr Argentina</p>
+            <p><span id="lastModified"></span></p>
+        </footer>
+
+</body>
+</html>
