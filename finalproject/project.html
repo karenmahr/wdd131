@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The site provides images of different native fauna species along with some basic facts and curiosities.
+        
+        Scenarios:
+        Does Argentina have a diverse fauna?
+        What´s the diet of this fauna?
+        What are some interesting facts about them?
+        " />
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+    <script src="scripts/project.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Native Fauna Species</title>
+</head>
+
+<body>
+    <header>
+        <button type="button" id="menu"></button>
+        <h1>Native Fauna Species</h1>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#" id="home">Home</a></li>
+                <li><a href="#" id="maritime">Maritime fauna</a></li>
+                <li><a href="#" id="terrestrial">Terrestrial fauna</a></li>
+                <li><a href="#" id="aerial">Aerial fauna</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="fauna">
+        </div>
+    </main>
+
+    <h3>More information</h3>
+    
+    <form method="get" action="review.html" class="form">
+
+        <fieldset>
+            <label for="userName">Your name
+                <span class="optional">*</span></label>
+            <input type="text" id="userName" name="name"></label>
+        </fieldset>
+
+        <fieldset>
+            <label for="userEmail">Your email
+                <span class="optional">*</span></label>
+            <input type="text" id="userEmail" name="email"></label>
+        </fieldset>
+
+        <fieldset>
+            <label for="productName">Question topic <span class="optional">*</span></label>
+            <select id="productName" name="pname" required>
+                <option value="">Choose a Product...</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <label for="message">Message
+                <span class="optional">(Optional)</span></label>
+            <input type="textarea" id="message" name="review">
+        </fieldset>
+        
+        <label for="submit"><input type="submit" id="submit" value="Ask question"></label>
+
+    <footer>
+        <p>© <span id="currentyear"></span> 🦌Karen Mahr Argentina🦌</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
