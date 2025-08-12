@@ -21,7 +21,7 @@ const faunas = [
         conservationStatus: "Once on the brink of extinction due to commercial whaling, it is now recovering thanks to international protection.",
         diet: "Filter feeder – consumes plankton and krill.",
         curiosity: "Can live for more than 70 years.",
-        imageUrl: "images/ballena.webp"
+        imageUrl: "finalproject/images/ballena.webp"
     },
     {
         faunaName: "Marsh Deer",
@@ -29,7 +29,7 @@ const faunas = [
         conservationStatus: "Vulnerable due to wetland destruction and hunting.",
         diet: "Herbivore – aquatic plants and grasses.",
         curiosity: "Excellent swimmer, often seen in marshes.",
-        imageUrl: "images/ciervo.webp"
+        imageUrl: "finalproject/images/ciervo.webp"
     },
     {
         faunaName: "Capybara",
@@ -37,7 +37,7 @@ const faunas = [
         conservationStatus: "Least concern, widely distributed across South America.",
         diet: "Herbivore – feeds on grasses and aquatic plants.",
         curiosity: "World’s largest rodent.",
-        imageUrl: "images/carpincho.webp"
+        imageUrl: "finalproject/images/carpincho.webp"
     },
     {
         faunaName: "Condor",
@@ -45,7 +45,7 @@ const faunas = [
         conservationStatus: "Near threatened due to poisoning and habitat loss.",
         diet: "Scavenger – feeds on carrion.",
         curiosity: "One of the largest flying birds in the world, with a wingspan up to 3.3 meters.",
-        imageUrl: "images/condor.webp"
+        imageUrl: "finalproject/images/condor.webp"
     },
     {
         faunaName: "Sea Lion",
@@ -53,7 +53,7 @@ const faunas = [
         conservationStatus: "Stable population, though affected by pollution and fishing nets.",
         diet: "Mainly fish and squid.",
         curiosity: "Males develop a large mane during adulthood.",
-        imageUrl: "images/leon-marino.webp"
+        imageUrl: "finalproject/images/leon-marino.webp"
     },
     {
         faunaName: "Rufous Hornero",
@@ -61,7 +61,7 @@ const faunas = [
         conservationStatus: "Least concern, very common in rural and urban areas.",
         diet: "Insects and other small invertebrates.",
         curiosity: "National bird of Argentina, famous for its mud nests shaped like ovens.",
-        imageUrl: "images/hornero.webp"
+        imageUrl: "finalproject/images/hornero.webp"
     },
     {
         faunaName: "Toucan",
@@ -69,7 +69,7 @@ const faunas = [
         conservationStatus: "Least concern, but affected by deforestation in some areas.",
         diet: "Fruits, insects, and small reptiles.",
         curiosity: "Its large beak helps regulate body temperature.",
-        imageUrl: "images/tucan.webp"
+        imageUrl: "finalproject/images/tucan.webp"
     },
     {
         faunaName: "Penguin",
@@ -77,7 +77,7 @@ const faunas = [
         conservationStatus: "Near threatened due to oil spills and climate change.",
         diet: "Small fish, squid, and crustaceans.",
         curiosity: "Can swim up to 15 km/h.",
-        imageUrl: "images/pinguino.webp"
+        imageUrl: "finalproject/images/pinguino.webp"
     },
     {
         faunaName: "Puma",
@@ -85,7 +85,7 @@ const faunas = [
         conservationStatus: "Least concern, but threatened in some regions by hunting and habitat loss.",
         diet: "Carnivore – mainly deer, guanacos, and smaller mammals.",
         curiosity: "Can jump more than 5 meters in a single leap.",
-        imageUrl: "images/puma.jpg"
+        imageUrl: "finalproject/images/puma.jpg"
     },
 ];
 
