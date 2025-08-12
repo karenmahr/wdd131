@@ -2,7 +2,7 @@ const today = new Date();
 const currentYearSpan = document.querySelector("#currentyear");
 currentYearSpan.textContent = today.getFullYear();
 
-const lastMofified = document.querySelector("#lastModified");
+const lastModified = document.querySelector("#lastModified");
 lastModified.textContent = `Last modified: ${document.lastModified}`;
 
 const products = [
@@ -38,5 +38,12 @@ const products = [
     const option = document.createElement("option");
     option.value = product.id;   
     option.textContent = product.name; 
-    selectElement.appendChild(option);
-});
+    selectElement.appendChild(option);  
+    });
+    const form = document.querySelector("form");
+
+    form.addEventListener("submit", () => {
+        let reviewCount = Number(localStorage.getItem("reviewCount")) || 0;
+        reviewCount++;
+        localStorage.setItem("reviewCount", reviewCount);
+    });
