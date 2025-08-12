@@ -2,7 +2,7 @@ const today = new Date();
 const currentYearSpan = document.querySelector("#currentyear");
 currentYearSpan.textContent = today.getFullYear();
 
-const lastMofified = document.querySelector("#lastModified");
+const lastModified = document.querySelector("#lastModified");
 lastModified.textContent = `Last modified: ${document.lastModified}`;
 
 const hamButton = document.querySelector("#menu");
@@ -24,11 +24,11 @@ const faunas = [
         imageUrl: "images/ballena.webp"
     },
     {
-    faunaName: "Marsh Deer",
-    habitat: "Terrestrial",
-    conservationStatus: "Vulnerable due to wetland destruction and hunting.",
-    diet: "Herbivore – aquatic plants and grasses.",
-    curiosity: "Excellent swimmer, often seen in marshes.",
+        faunaName: "Marsh Deer",
+        habitat: "Terrestrial",
+        conservationStatus: "Vulnerable due to wetland destruction and hunting.",
+        diet: "Herbivore – aquatic plants and grasses.",
+        curiosity: "Excellent swimmer, often seen in marshes.",
         imageUrl: "images/ciervo.webp"
     },
     {
@@ -47,7 +47,6 @@ const faunas = [
         curiosity: "One of the largest flying birds in the world, with a wingspan up to 3.3 meters.",
         imageUrl: "images/condor.webp"
     },
-
     {
         faunaName: "Sea Lion",
         habitat: "Coastal",
@@ -92,25 +91,39 @@ const faunas = [
 
 createFaunaCard(faunas);
 
+function setFilter(filterName) {
+    localStorage.setItem("selectedFilter", filterName);
+}
 const homeLink = document.querySelector("#home");
 homeLink.addEventListener("click", () => {
     createFaunaCard(faunas);
+    setFilter("home");
 });
-
 const maritimeLink = document.querySelector("#maritime");
 maritimeLink.addEventListener("click", () => {
     createFaunaCard(faunas.filter(fauna => fauna.habitat.includes("Coastal")));
+    setFilter("maritime");
 });
-
 const terrestrialLink = document.querySelector("#terrestrial");
 terrestrialLink.addEventListener("click", () => {
     createFaunaCard(faunas.filter(fauna => fauna.habitat.includes("Terrestrial")));
+    setFilter("terrestrial");
 });
-
 const aerialLink = document.querySelector("#aerial");
 aerialLink.addEventListener("click", () => {
     createFaunaCard(faunas.filter(fauna => fauna.habitat.includes("Aerial")));
+    setFilter("aerial");
 });
+
+const savedFilter = localStorage.getItem("selectedFilter");
+if (savedFilter) {
+    if (savedFilter === "home") createFaunaCard(faunas);
+    if (savedFilter === "maritime") createFaunaCard(faunas.filter(fauna => fauna.habitat.includes("Coastal")));
+    if (savedFilter === "terrestrial") createFaunaCard(faunas.filter(fauna => fauna.habitat.includes("Terrestrial")));
+    if (savedFilter === "aerial") createFaunaCard(faunas.filter(fauna => fauna.habitat.includes("Aerial")));
+} else {
+    createFaunaCard(faunas);
+}
 
 function createFaunaCard(filteredFaunas) {
     document.querySelector(".fauna").innerHTML = "";
@@ -138,7 +151,6 @@ function createFaunaCard(filteredFaunas) {
         card.appendChild(conservationStatus);
         card.appendChild(diet);
         card.appendChild(curiosity);
-
 
         document.querySelector(".fauna").appendChild(card);
     });

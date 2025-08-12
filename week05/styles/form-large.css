@@ -6,13 +6,10 @@
     .form input[type="submit"] {
         display: block;
         width: 100%;
-        max-width: 1000px;
     }
 
     #productName{
         display: block;
         width: 100%;
-        max-width: 1000px;
     }
-
 }

@@ -1,4 +1,4 @@
-@media (min-width:1000px) {
+@media (min-width:640px) {
     h1 {
         font-size: 2.5rem;
         margin-left: 0;
@@ -33,8 +33,7 @@
         grid-template-columns: repeat(3, 1fr);
     }
     img{
-        width:80%;
-        height:400px;
+        width: 271;
+        height: 400;
     }
-
 }
